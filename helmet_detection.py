@@ -18,7 +18,7 @@ def predict(image_path):
     img0=image_path
 
     # for person on bike
-    weights0_path = 'mini_project/yolov3-obj_final.weights'
+    weights0_path = 'yolov3-obj_final.weights'
     configuration0_path = 'yolov3_pb.cfg'
 
     probability_minimum = 0.5
@@ -35,7 +35,7 @@ def predict(image_path):
     # In[5]:
 
     # for helmet
-    weights1_path = 'mini_project/yolov3-helmet.weights'
+    weights1_path = 'yolov3-helmet.weights'
     configuration1_path = 'yolov3-helmet.cfg'
 
     # In[6]:

@@ -6,7 +6,7 @@ from helmet_detection import predict
 import os
 def main():
 
-    st.set_page_config(layout='wide')
+    st.set_page_config(layout='wide',page_title="Sign_detector")
     custom='''
     <style>
     body {
@@ -91,6 +91,33 @@ def main():
     uploaded_image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
     left_img, right_img = st.columns([3, 1])
     st.write("---")
+
+    bottum_left,bottum_right=st.columns(2)
+    with bottum_left:
+        streamlit_lottie.st_lottie(git_logo, height=600, width=600)
+
+    with bottum_right:
+        st.markdown(
+            f'<div style="font-size: 28px;padding-top:140px;padding-left:100px"> </div>',
+            unsafe_allow_html=True
+        )
+        button_style = (
+            "font-size: 24px;"  
+            "padding: 10px 20px;"  
+            "border: 2px solid #000;"
+            "border-radius: 10px;"
+            "text-decoration: none;"
+
+        )
+
+
+        # st.button("Sagar.E", on_click=open_website, args=['https://github.com/sagareddum'])
+        st.write(f'<a href="https://github.com/sagareddum" style="{button_style}" class="stButton">Sagar.E</a>',unsafe_allow_html=True)
+        st.markdown(f'<div style="padding-top:50px;"> </div>',unsafe_allow_html=True)
+        st.write(f'<a href="https://github.com/ajaykumar703" style="{button_style}" class="stButton">Ajay.k</a>',unsafe_allow_html=True)
+        st.markdown(f'<div style="padding-top:50px;"> </div>', unsafe_allow_html=True)
+        st.write(f'<a href="https://github.com/sagareddum" style="{button_style}" class="stButton">Pramode.M.S</a>',unsafe_allow_html=True)
+
 
 
 

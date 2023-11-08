@@ -6,14 +6,10 @@
 
 def predict(image_path):
     import numpy as np
-    import pandas as pd
     import os
     import cv2
-    import matplotlib.pyplot as plt
-    import matplotlib.image as mpimg
-    import matplotlib.patches as patches
-    import pylab as pl
-    from PIL import Image
+    
+    
 
     # # Data Viewing
 

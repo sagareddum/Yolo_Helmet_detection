@@ -1,4 +1,4 @@
-Requests
+requests
 streamlit
 streamlit_lottie
 opencv-python

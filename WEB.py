@@ -38,6 +38,9 @@ def main():
             f'<div style="font-size: 30px; font-weight: bold; color: #415056;text-align: center;">Quick-Links</div>',
             unsafe_allow_html=True
         )
+    with c2:
+        st.button("Model",on_click=open_website,args=['https://github.com/sagareddum/Yolo_Helmet_detection'])
+        
     with c3:
 
         st.button("SK-learn",on_click=open_website,args=['https://scikit-learn.org/stable/'])

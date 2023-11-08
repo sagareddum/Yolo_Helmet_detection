@@ -16,9 +16,6 @@ def predict(image_path):
     # In[2]:
 
     img0=image_path
-    _ = plt.figure(figsize=(15, 15))
-    _ = plt.axis('off')
-    _ = plt.imshow(mpimg.imread(img0))
 
     # for person on bike
     weights0_path = 'mini_project/yolov3-obj_final.weights'
@@ -152,10 +149,10 @@ def predict(image_path):
 
     # In[12]:
 
-    plt.rcParams['figure.figsize'] = (20.0, 15.0)
+    
     image_rgb = cv2.cvtColor(image_input, cv2.COLOR_BGR2RGB)
 
-    # Display the image using Matplotlib
+    
     return (image_rgb,a)
 
 

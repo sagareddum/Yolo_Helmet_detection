@@ -131,7 +131,7 @@ def main():
         image_data = uploaded_image.read()
 
 
-        output_directory = 'C:/Users/Sagar/PycharmProjects/object_detection/Input_image_jpg/'
+        output_directory = 'helmet_detection.py'
 
 
         output_filename = "uploaded_image.jpg"
